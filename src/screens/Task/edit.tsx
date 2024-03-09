@@ -39,7 +39,7 @@ const EditTask = () => {
           onSubmit={handleSubmit}
 
           className="mx-auto max-w-[1200px] w-full flex justify-center items-center h-screen">
-      <div className="grid gap-6 mb-6 md:grid-cols-1 bg-slate-400 p-4 w-[35%] rounded-lg">
+      <div className="grid gap-6 mb-6 md:grid-cols-1 bg-slate-400 p-4 md:w-[35%] w-[80%] rounded-lg">
             <h3 className="text-2xl font-bold text-center">Update Task</h3>
         <div>
           <label

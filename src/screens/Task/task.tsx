@@ -62,7 +62,7 @@ const Tasks = () => {
       }
             {tasks.length > 0 &&  
                 <>
-                <div className="relative overflow-x-auto w-[60%]  ">
+                <div className="relative overflow-x-auto md:w-[60%] w-[90%]  ">
                                 <h3 className="text-2xl font-bold text-left my-3">All Tasks</h3>
 
       <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
