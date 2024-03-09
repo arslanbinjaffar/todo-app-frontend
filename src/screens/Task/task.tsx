@@ -35,7 +35,7 @@ const Tasks = () => {
 
   if (loading) {
     return (
-      <div className="mx-auto max-w-[500px]  flex justify-center items-center h-screen">
+      <div className="mx-auto max-w-[500px]  flex justify-center items-center">
         <div className="grid gap-6 mb-6 md:grid-cols-1 p-4">
           <img src={loadingImage} alt="loading image" className="w-20 h-20"/>
         </div>
@@ -44,7 +44,7 @@ const Tasks = () => {
   }
   const headings = ['Title', 'Message', 'Completed', 'Actions'];
     return (
-        <section className="mx-auto max-w-[1200px] w-full  flex justify-center items-center h-screen">
+        <section className="mx-auto max-w-[1200px] w-full  flex justify-center items-center h-auto my-10">
 
       {
           tasks?.length == 0 &&
@@ -62,8 +62,8 @@ const Tasks = () => {
       }
             {tasks.length > 0 &&  
                 <>
-                <div className="relative overflow-x-auto w-[60%]">
-                                <h3 className="text-2xl font-bold text-center">All Tasks</h3>
+                <div className="relative overflow-x-auto w-[60%]  ">
+                                <h3 className="text-2xl font-bold text-left my-3">All Tasks</h3>
 
       <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
         <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">

@@ -2,6 +2,8 @@ import axios from "axios";
 import { useState } from "react";
 import { useNavigate,useLocation, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
+import loadingbar from '../../assets/loadingbar.svg'
+
 interface formDataType{
     title: string
     Description: string,
@@ -116,8 +118,9 @@ const EditTask = () => {
           <button
             type="submit"
             className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-          >
-            Update
+              >
+                {loading ? <img src={loadingbar} alt='loading' className='w-5 h-5 bg-blue-600' /> :
+                  "Update"}
           </button>
         </div>
       </div>
