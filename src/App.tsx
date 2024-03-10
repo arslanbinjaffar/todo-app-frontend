@@ -1,8 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-// import Sidebar from "./components/sidebar";
-// import Schedule from "./components/Schedule";
-// import  CreateTask from './components/Task';
-// import DisplayTask from "./components/DisplayTasks";
 import { SignInForm, SignUpForm, Todo } from "./screens";
 const App = () => {
   return (
