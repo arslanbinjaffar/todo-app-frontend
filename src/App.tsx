@@ -1,18 +1,16 @@
 import { Route, Routes } from "react-router-dom";
-import CreateTask from "./screens/Task/create";
-import Tasks from "./screens/Task/task";
-import Edit from "./screens/Task/edit";
-import SignInForm from "./screens/auth/login";
-import SignUpForm from "./screens/auth/register";
-
+// import Sidebar from "./components/sidebar";
+// import Schedule from "./components/Schedule";
+// import  CreateTask from './components/Task';
+// import DisplayTask from "./components/DisplayTasks";
+import { SignInForm, SignUpForm, Todo } from "./screens";
 const App = () => {
   return (
     <Routes>
-      <Route path='/' element={<SignInForm />} />
-      <Route path="/register" element={<SignUpForm/>}/>
-      <Route path="create" element={<CreateTask />} />
-      <Route path="tasks" element={<Tasks />} />
-      <Route path="edit/:id" element={<Edit />} />
+      <Route path="/" element={<SignInForm />} />
+      <Route path="/register" element={<SignUpForm />} />
+      <Route path="tasks" element={<Todo />} />
+      <Route path="tasks/:id" element={<Todo />} />
     </Routes>
   );
 };
