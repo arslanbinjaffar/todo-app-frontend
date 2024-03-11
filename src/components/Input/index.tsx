@@ -1,7 +1,7 @@
 import  { FC, ChangeEvent } from 'react';
 
 interface Props {
-    type: 'text' | 'checkbox' | 'email' | 'search' |'password'; 
+    type: string; 
     id: string
     name:string
     placeholder: string;
@@ -14,10 +14,10 @@ interface Props {
 const Input: FC<Props> = ({id,name,required, className, placeholder, type, value, onChange }) => {
     return (
         <>
-            {type === 'text' && (
+            {type !== 'checkbox' && (
                 <input
-                name={name}
-                id={id}
+                    name={name}
+                    id={id}
                     type={type}
                     className={className}
                     placeholder={placeholder}
@@ -32,7 +32,7 @@ const Input: FC<Props> = ({id,name,required, className, placeholder, type, value
                 id={id}
                     type={type}
                     className={className}
-
+            
                     checked={value as boolean}
                     onChange={onChange}
                 />

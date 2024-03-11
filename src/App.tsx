@@ -4,8 +4,8 @@ const App = () => {
   return (
     <Routes>
       <Route path="/" element={<SignInForm />} />
-      <Route path="/register" element={<SignUpForm />} />
-      <Route index element={<Todo />} />
+      <Route path="register" element={<SignUpForm />} />
+      <Route path="tasks" element={<Todo />} />
       <Route path="tasks/:id" element={<Todo />} />
     </Routes>
   );
