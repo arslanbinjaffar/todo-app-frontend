@@ -27,9 +27,9 @@ const Todo = () => {
     getAllTasks();
   };
   return (
-    <div className="flex  flex-col md:flex-row  overflow-auto ">
-      <Sidebar />
-      <Schedule />
+    <div className="flex  flex-col  items-center justify-center overflow-auto my-5">
+      {/* <Sidebar /> */}
+      {/* <Schedule /> */}
       <Create handleTaskAdded={handleTaskAdded} initialData={initialData} />
       <DisplayTask handleTaskAdded={handleTaskAdded} tasks={tasks} />
     </div>

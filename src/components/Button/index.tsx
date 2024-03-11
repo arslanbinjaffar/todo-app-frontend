@@ -1,5 +1,5 @@
 import { FC, ButtonHTMLAttributes } from "react";
-import loadingbar from "../../assets/loadingbar.svg";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   isLoading?: boolean;
@@ -27,10 +27,9 @@ const Button: FC<Props> = ({
       {...props}
     >
       {isLoading ? (
-        <img
-          src={loadingbar}
-          alt="loading"
-          className="w-5 h-5 bg-blue-600 loading-icon"
+        <AiOutlineLoading3Quarters
+          className="text-blue-900 animate-rotate"
+          size={20}
         />
       ) : (
         title
@@ -40,3 +39,4 @@ const Button: FC<Props> = ({
 };
 
 export default Button;
+

@@ -41,8 +41,8 @@ const Tasks = ({
           formData,
         );
         setLoading(false);
-        navigate("/tasks");
         setformData(initalValue);
+        navigate('/')
         handleTaskAdded();
         toast(data.message);
       } catch (error) {
@@ -69,18 +69,18 @@ const Tasks = ({
     setformData(initialData);
   }, [initialData]);
   return (
-    <section className="p-5 max-w-[700px] w-full md:border-r border-gray-300 w">
+    <section className="p-5 max-w-[500px] w-full md:border border-gray-300  shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] h-full">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <LuBarChartHorizontalBig size={20} />
-          <h2 className="text-2xl capitalize font-bold">today</h2>
+          {/* <LuBarChartHorizontalBig size={20} /> */}
+          <h2 className="text-2xl capitalize font-bold">Create Task</h2>
         </div>
         <div className="flex items-center gap-2">
-          <TbMobiledata size={20} />
-          <HiOutlineDotsHorizontal size={20} />
+          {/* <TbMobiledata size={20} /> */}
+          {/* <HiOutlineDotsHorizontal size={20} /> */}
         </div>
       </div>
-      <div className="w-full my-4">
+      <div className="w-full ">
         <input
           type="text"
           className="bg-[#F7F7F7] w-full p-2 rounded-md placeholder:text-sm focus:outline-none placeholder:lowercase placeholder:text-gray-300"
