@@ -1,6 +1,3 @@
-import { LuBarChartHorizontalBig } from "react-icons/lu";
-import { TbMobiledata } from "react-icons/tb";
-import { HiOutlineDotsHorizontal } from "react-icons/hi";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { BsFillSendPlusFill } from "react-icons/bs";
 import { useEffect, useState } from "react";

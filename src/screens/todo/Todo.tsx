@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLocation, useParams } from "react-router-dom";
-import { Create, DisplayTask, Schedule, Sidebar } from "../../components";
+import { Create, DisplayTask } from "../../components";
 import axios from "axios";
 
 const Todo = () => {
@@ -28,8 +28,6 @@ const Todo = () => {
   };
   return (
     <div className="flex  flex-col  items-center justify-center overflow-auto my-5">
-      {/* <Sidebar /> */}
-      {/* <Schedule /> */}
       <Create handleTaskAdded={handleTaskAdded} initialData={initialData} />
       <DisplayTask handleTaskAdded={handleTaskAdded} tasks={tasks} />
     </div>
