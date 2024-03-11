@@ -39,7 +39,7 @@ const Tasks = ({
         );
         setLoading(false);
         setformData(initalValue);
-        navigate('/')
+        navigate('/tasks')
         handleTaskAdded();
         toast(data.message);
       } catch (error) {
